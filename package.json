@@ -8,5 +8,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "name": "your-project",
+  "version": "1.0.0",
+  "type": "module"
+
 }
+
+
