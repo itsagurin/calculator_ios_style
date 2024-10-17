@@ -28,6 +28,47 @@ document.querySelectorAll('.operators').forEach(button => {
     });
 });
 
+document.querySelectorAll('.clear').forEach(button => {
+    button.addEventListener('click', () => {
+        display.textContent = '';
+        output.textContent = '';
+        currentValue = '';
+        previousValue = '';
+        operator = '';
+    });
+});
+
+document.querySelector('.backspace').addEventListener('click', () => {
+    if (currentValue) {
+        currentValue = currentValue.slice(0, -1);
+        display.textContent = display.textContent.slice(0, -1);
+    }
+});
+
+document.querySelectorAll('.equalto').forEach(button => {
+    button.addEventListener('click', () => {
+        display.textContent = output.textContent.replace('=', '').trim();
+        output.textContent = '';
+        currentValue = display.textContent;
+        previousValue = '';
+        operator = '';
+    });
+});
+
+document.querySelector('.plus-minus').addEventListener('click', () => {
+    if (currentValue) {
+        currentValue = (parseFloat(currentValue) * -1).toString();
+        if (operator) {
+            let currentDisplay = display.textContent.split(' ');
+            currentDisplay[currentDisplay.length - 1] = currentValue;
+            display.textContent = currentDisplay.join(' ');
+        } else {
+            display.textContent = currentValue;
+        }
+        calculateInRealTime();
+    }
+});
+
 function calculateInRealTime() {
     let result = 0;
     const prev = parseFloat(previousValue);
