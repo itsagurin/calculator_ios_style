@@ -2,6 +2,8 @@
 
 A simple web-based calculator inspired by the iOS calculator, built with vanilla JavaScript, HTML, and CSS. This calculator supports basic arithmetic operations, real-time calculation display, and additional features like backspace and toggle sign (`+/-`).
 
+![Screenshot 2024-10-19 180510](https://github.com/user-attachments/assets/1b0ec80a-ac83-42b4-b142-4a7d1f2bf5a3)
+
 ## Features
 
 - Addition, subtraction, multiplication, and division.
