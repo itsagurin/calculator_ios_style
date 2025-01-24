@@ -12,14 +12,6 @@ A simple web-based calculator inspired by the iOS calculator, built with vanilla
 - Clear all (`AC`) and backspace functionality.
 - Simple and clean iOS-style design.
 
-
-### File Descriptions
-
-- **backend/calculator.js**: Contains the main JavaScript logic for handling button clicks, performing calculations, and updating the display.
-- **public/index.html**: The main HTML file that sets up the calculator layout and includes links to the CSS and JavaScript files.
-- **public/style.css**: Provides the styling to mimic the iOS calculator look and feel.
-- **index.js**: Node.js server configuration to serve the static files.
-
 ## Getting Started
 
 ### Prerequisites
@@ -31,8 +23,8 @@ Make sure you have [Node.js](https://nodejs.org/) installed.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/ios-style-calculator.git
-   cd ios-style-calculator
+   git clone https://github.com/itsagurin/calculator-ios-style.git
+   cd calculator-ios-style
 
 2. Run the server:
 
